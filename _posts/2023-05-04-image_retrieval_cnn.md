@@ -2,7 +2,7 @@
 
 Here's the table of contents:
 
-TOC
+1. TOC
 {:toc}
 
 ## Prerequsite
