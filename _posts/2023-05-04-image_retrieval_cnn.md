@@ -1,5 +1,10 @@
 # [DL Model] Image Retrieval with CNN
 
+Here's the table of contents:
+
+TOC
+{:toc}
+
 ## Prerequsite
 
 
