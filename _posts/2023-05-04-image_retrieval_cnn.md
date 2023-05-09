@@ -56,5 +56,5 @@ The most straight-forward way:
 1. All the images of the dataset ----> CNN model ----> **(A) the list of codes** (all the codes of all the images)  
 2. The target image &emsp; &emsp; &emsp; &emsp; ----> CNN model ----> **(B) the target image code**  
 3. Compare each of the code in **(A) the list of codes** to **(B) the target image code**.  
-4. Get top k codes in **(A) the list of codes** that are the least different to **(B) the target image code**.  
+4. Get top k codes in **(A) the list of codes** that are the least different from **(B) the target image code**.  
 5. Return those images corresponding to the top k codes.  
