@@ -28,7 +28,7 @@ Tada, Image Retrieval.
 
 For Image Retrieval task, each image has a way to be encoded, or has a *code* that represent the content of that image.  
 An image is usually encoded into a list of numbers. In other words, a *code* is usually a list of numbers.  
-So the ***similarity*** of 2 images will be the difference in the *codes* between 2 images.
+So the ***similarity*** of 2 images will be **the difference in the *codes*** between 2 images.
 
 ## How CNN helps with Image Retrieval?
 
