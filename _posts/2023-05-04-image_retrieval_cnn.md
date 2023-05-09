@@ -12,7 +12,7 @@ Table of contents:
 
 ## Why?
 
-Implementing Image Retrieval (IR) using CNN seems straight forward.  
+Implementing Image Retrieval (IR) using CNN seems straight-forward.  
 With the prior knowledge in Prerequisite, it is doable.  
 So here I implemented IR with CNN as a project.
 
@@ -20,38 +20,41 @@ So here I implemented IR with CNN as a project.
 
 Image Retrieval is, providing we have a **dataset of images**,  
 a **target image** we find somewhere else,  
-and we want to get **images from the dataset** that are the most similar to the **target one**.
+and we want to get **images from the dataset** (i.e: top k images) that are the most ***similar*** to the **target one**.
 
 Tada, Image Retrieval.
 
-## How Image Retrieval with CNN works?
+### What is ***similarity*** between 2 images?
 
-### What is "similarity" between 2 images?
+For Image Retrieval task, each image has a way to be encoded, or has a *code* that represent the content of that image.  
+An image is usually encoded into a list of numbers. In other words, a *code* is usually a list of numbers.  
+So the ***similarity*** of 2 images will be the difference in the *codes* between 2 images.
 
-For Image Retrieval task, each image has a way to be encoded, or has a "code" that represent the content of that image.  
-An image is usually encoded into a list of numbers. In other words, a "code" is usually a list of numbers.  
-So the "similarity" of 2 images will be the difference in the "codes" between 2 images.
+## How CNN helps with Image Retrieval?
 
-### How CNN helps with Image Retrieval?
-
-CNN makes IR become easy and straight forward.
+CNN makes IR become easy and straight-forward.
 
 When I studied at my university back then, I did a similar IR project, but without CNN.  
-The main part is to produce the image "code".  
+The main part is to produce the image *code*.  
 To did that, there were quite a lot concepts to be learnt and quite a lot of code to be written.  
 So complex that I cannot remember them, or have a severe headache whenever I try to recall them now.
 
-However, now with CNN, it can produce the image "code" in the simplest way, without much concepts (provided that you already know CNN).  
-To get the "code", all we have to do is input the image into CNN, we will get a feature map in one of the lastest layer, flatten it out, and that is the code.  
-(Caution: Please take into account the fact that I was kinda lost back then)
+However, that day is gone. Now with CNN, it can produce an image *code* in the most straight-forward way.  
+The most straight-forward way:  
+1. **Input** an image into CNN.  
+2. Get the **output** of CNN. (To be more accurate, we will get the output of one of the lastest layer of CNN)  
+3. **Flatten** the output. And that is the *code*.  
+
+## How Image Retrieval with CNN works?
 
 ### What we need?
-1. A dataset of images.
-2. A CNN model.
-3. A target image.
+1. A dataset of images.  
+2. A CNN model.  
+3. A target image.  
 
-### All we need to do:
-1. all the images of the dataset --(input)--> CNN model --(output)--> list of features of dataset images
-2. the target image &emsp; &emsp; &emsp; &emsp; --(input)--> CNN model --(output)--> features
-3. compare features of target image to features of images of dataset:  
-the shorter the distance is, the more similar the features.
+### How we do:
+1. All the images of the dataset ----> CNN model ----> **(A) the list of codes** (all the codes of all the images)  
+2. The target image &emsp; &emsp; &emsp; &emsp; ----> CNN model ----> **(B) the target image code**  
+3. Compare each of the code in **(A) the list of codes** to **(B) the target image code**.  
+4. Get top k codes in **(A) the list of codes** that are the least different to **(B) the target image code**.  
+5. Return those images corresponding to the top k codes.  
