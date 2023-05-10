@@ -52,9 +52,57 @@ The most straight-forward way:
 2. A CNN model.  
 3. A target image.  
 
-### How we do:
+### How we do
 1. All the images of the dataset ----> CNN model ----> **(A) the list of codes** (all the codes of all the images)  
 2. The target image &emsp; &emsp; &emsp; &emsp; ----> CNN model ----> **(B) the target image code**  
 3. Compare each of the code in **(A) the list of codes** to **(B) the target image code**.  
-4. Get top k codes in **(A) the list of codes** that are the least different from **(B) the target image code**.  
-5. Return those images corresponding to the top k codes.  
+4. Return top k codes in **(A) the list of codes** that are the least different from **(B) the target image code**.  
+5. Return k images corresponding to the top k codes.  
+
+## Experiment
+
+### Setup
+
+The dataset contains 1000 images of 100 species of animals, each species has 10 images.  
+For the target image, I picked (for easy demonstration) 3 images of each random species on the internet.  
+
+**According to our system**, the result is the top 10 images of the dataset which are the most similar to the target image.  
+The order is as follow:  
+```
+1  2  3  4
+5  6  7  8
+9  10 T
+
+* 1 is the top 1 image, 10 is the top 10 image.  
+* T is the target image.  
+``` 
+
+### Result
+
+1. Target image: **a bulbul** (bird).
+
+<img src="/images/result_bulbul.JPG" width= "40%" height= "40%" center= True>
+
+*Top 1 is an image of a bulbul. However, the others are not images of a bulbul*. 
+
+<br/>
+
+2. Target image: **a loggerhead** (turtle).
+
+<img src="/images/result_loggerhead.JPG" width= "40%" height= "40%">
+
+*Top 1 is an image of a loggerhead. However, the others are not images of a loggerhead*.
+
+<br/>
+
+3. Target image: **a whiptail** (lizard).
+
+<img src= "/images/result_whiptail.JPG" width= "40%" height= "40%">
+
+*Top 1 is an image of a whiptail. However, the others are not images of a whiptail*.
+
+
+
+
+
+
