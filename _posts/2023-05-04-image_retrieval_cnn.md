@@ -64,7 +64,7 @@ The most straight-forward way:
 ### Setup
 
 The dataset contains 1000 images of 100 species of animals, each species has 10 images.  
-For the target image, I picked (for easy demonstration) 3 images of each random species on the internet.  
+For the target image, I picked (for easy demonstration) 3 images of each random species on Google.  
 
 **According to our system**, the result is the top 10 images of the dataset which are the most similar to the target image.  
 The order is as follow:  
@@ -81,7 +81,7 @@ The order is as follow:
 
 1. Target image: **a bulbul** (bird).
 
-<img src="/images/result_bulbul.JPG" width= "40%" height= "40%" center= True>
+<img src="/images/result_bulbul.JPG" width= "50%" height= "50%" center= True>
 
 *Top 1 is an image of a bulbul. However, the others are not images of a bulbul*. 
 
@@ -89,7 +89,7 @@ The order is as follow:
 
 2. Target image: **a loggerhead** (turtle).
 
-<img src="/images/result_loggerhead.JPG" width= "40%" height= "40%">
+<img src="/images/result_loggerhead.JPG" width= "50%" height= "50%">
 
 *Top 1 is an image of a loggerhead. However, the others are not images of a loggerhead*.
 
@@ -97,12 +97,37 @@ The order is as follow:
 
 3. Target image: **a whiptail** (lizard).
 
-<img src= "/images/result_whiptail.JPG" width= "40%" height= "40%">
+<img src= "/images/result_whiptail.JPG" width= "50%" height= "50%">
 
 *Top 1 is an image of a whiptail. However, the others are not images of a whiptail*.
 
+## Issue
 
+### What we want
 
+We want our system to return images of the **same species** as the target image.  
+We also want our system to return as **many images in top 10** as possible.  
+(For our dataset, each species has 10 images, so the max and ideal number of images returned in top 10 is 10)
 
+### What we get
+
+As we can see, although our system is able to retrieve 1 truely similar image, and the image is top 1, it is not close to what we want.  
+
+### How close is our system to what we want?
+
+Actually, I tried some other images and the system returned nothing relevant.  
+So literally, it is not even close.  
+:bedge:
+
+## Thoughts after I recovered from headache
+
+Apparently, the result is not good enough, at least for my satisfaction as a project. (I want at least 5 images retrieved)  
+So I decide to try to improve the system.  
+
+I will try to ...
+I can be wrong about the workflow of IR using CNN. When I realize it, I will adjust the system.  
+
+If I manage to improve the system successfully, there will be a blog "IR with CNN Phase 2".  
+On the other hand, please head out to my other blogs if you interested.  
 
 
