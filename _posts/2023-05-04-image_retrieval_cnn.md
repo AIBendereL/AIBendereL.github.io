@@ -1,4 +1,4 @@
-# [DL Model] Image Retrieval with CNN
+# [DL Model] Image Retrieval with CNN - Baseline
 
 Table of contents:
 
@@ -119,13 +119,18 @@ Actually, I tried some other images and the system returned nothing relevant.
 So literally, it is not even close.  
 :bedge:
 
-## Thoughts after I recovered from headache
+## Thoughts after I recovered from a headache
 
-Apparently, the result is not good enough, at least for my satisfaction as a project. (I want at least 5 images retrieved)  
-So I decide to try to improve the system.  
+Apparently, the result is not good. I want at least 5 images retrieved in top 10.
+So I decide to try to improve the system. But it is for another blog.  
 
-I will try to ...
-I can be wrong about the workflow of IR using CNN. When I realize it, I will adjust the system.  
+The workflow is kinda straight-forward tho, thanks to CNN.
+
+## Conlusion
+
+I implement Image Retrieval with CNN.  
+CNN helps with producing the code in a very straight-forward way.  
+However, the system now needs improvement.  
 
 If I manage to improve the system successfully, there will be a blog "IR with CNN Phase 2".  
 On the other hand, please head out to my other blogs if you interested.  
