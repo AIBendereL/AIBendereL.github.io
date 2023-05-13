@@ -147,7 +147,7 @@ So I decide to try to improve the system. But it is for another blog (maybe).
 The workflow is kinda straight-forward tho, thanks to CNN.  
 This should help improving the system performance to be easy.  
 
-I heard that, a good practice when doing a Deep Learning project, or building Deep Learning system, is, first, to build it end-to-end, in other words, to build a baseline.  
+I heard that, a good practice when doing a Deep Learning project, or building Deep Learning system is, first, to build it end-to-end, in other words, to build a baseline.  
 Then iterate over it again and again, end-to-end, for incremental improvement.  
 So here it is, the baseline with hope.  
 
