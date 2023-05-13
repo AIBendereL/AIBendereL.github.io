@@ -90,7 +90,7 @@ The order is as follow:
 
 1. Target image: **a bulbul** (bird).
 
-<img src="/images/result_bulbul.JPG" width= "70%" height= "70%" center= True>
+<img src="/images/result_bulbul.JPG" width= "60%" height= "60%" center= True>
 
 *Top 1 is an image of a bulbul. However, the others are not images of a bulbul*. 
 
@@ -98,7 +98,7 @@ The order is as follow:
 
 2. Target image: **a loggerhead** (turtle).
 
-<img src="/images/result_loggerhead.JPG" width= "70%" height= "70%">
+<img src="/images/result_loggerhead.JPG" width= "60%" height= "60%">
 
 *Top 1 is an image of a loggerhead. However, the others are not images of a loggerhead*.
 
@@ -106,7 +106,7 @@ The order is as follow:
 
 3. Target image: **a whiptail** (lizard).
 
-<img src= "/images/result_whiptail.JPG" width= "70%" height= "70%">
+<img src= "/images/result_whiptail.JPG" width= "60%" height= "60%">
 
 *Top 1 is an image of a whiptail. However, the others are not images of a whiptail*.
 
