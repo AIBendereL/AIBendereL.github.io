@@ -134,6 +134,12 @@ Due to the fact that, the system's performance is only at baseline level.
 
 [*Image Retrieval with CNN code link (Github)*](https://github.com/AIBendereL/Image_Retrieval_with_CNN_baseline/tree/main)
 
+One thing to be mentioned is that, in the Github code,  
+I use the word *feature* for *image code*,  
+The reason is that, as I mentioned before, we will get the *image code* from the output of one of the lastest layer of CNN,  
+and the output of a layer is called *feature map*.  
+Therefore, in general, people will use the word *feature*.  
+
 ## Thoughts after I recovered from a headache
 
 Apparently, the result is not good. I want a Image Retrieval with CNN system that can retrieve at least 5 images in top 10.  
