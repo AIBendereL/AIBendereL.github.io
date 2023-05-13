@@ -41,7 +41,7 @@ So the ***similarity*** of 2 images will be **the difference in the *codes*** be
 
 ## How CNN helps with Image Retrieval?
 
-CNN makes IR become easy and straight-forward.
+CNN makes Image Retrieval become easier and straight-forward.
 
 When I studied at my university back then, I did a similar IR project, but without CNN.  
 The main part is to produce the image *code*.  
