@@ -5,6 +5,15 @@ Table of contents:
 1. TOC
 {:toc}
 
+## Who this blog is for
+
+This blog is about What Image Retrieval using CNN looks like, in general.  
+
+If you are learning Deep Learning at high-level (basic), and want to apply that to an Image Retrieval system, we are on the same boat and you are at the right place.  
+
+I try to make the blog simple without bulky details, with the hope that it can provide you with a clear view of the system.  
+Meanwhile, I have code on Github for experimenting and reproducing if needed.  
+
 ## Prerequsite
 
 1. You know what a dataset of images is.
@@ -13,8 +22,8 @@ Table of contents:
 ## Why?
 
 Implementing Image Retrieval (IR) using CNN seems straight-forward.  
-With the prior knowledge in Prerequisite, it is doable.  
-So here I implemented IR with CNN as a project.
+With only some basic knowledge as Prerequisite, it is doable.  
+So here I implement IR with CNN as a project.  
 
 ## What is Image Retrieval?
 
@@ -140,6 +149,8 @@ The reason is that, as I mentioned before, we will get the *image code* from the
 Therefore, in general, people will use the word *feature*.  
 
 ## Thoughts after I recovered from a headache
+
+After recovering from a headache given by the system performance, I sought for another one by thinking about improvement in the system's performance.  
 
 Apparently, the result is not good. I want a Image Retrieval with CNN system that can retrieve at least 5 images in top 10.  
 So I decide to try to improve the system. But it is for another blog (maybe).  
