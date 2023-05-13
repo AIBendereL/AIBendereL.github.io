@@ -22,7 +22,7 @@ Image Retrieval is, providing we have a **dataset of images**,
 a **target image** we find somewhere else,  
 and we want to get **images from the dataset** (i.e: top k images) that are the most ***similar*** to the **target one**.
 
-Tada, Image Retrieval.
+Boom, Image Retrieval.
 
 ### What is ***similarity*** between 2 images?
 
@@ -119,20 +119,40 @@ Actually, I tried some other images and the system returned nothing relevant.
 So literally, it is not even close.  
 :bedge:
 
+## Summary
+
+I implement **Image Retrieval with CNN**.  
+CNN helps with producing the code in a very **straight-forward** way.  
+However, the system's performance needs improvement.  
+
+## Code  
+
+Here is my code for experimenting.  
+
+I suggest to use it as a reference **for the workflow only**.  
+Due to the fact that, the system's performance is only at baseline level.  
+
+[*Image Retrieval with CNN code link (Github)*](https://github.com/AIBendereL/Image_Retrieval_with_CNN_baseline/tree/main)
+
 ## Thoughts after I recovered from a headache
 
-Apparently, the result is not good. I want at least 5 images retrieved in top 10.
-So I decide to try to improve the system. But it is for another blog.  
+Apparently, the result is not good. I want a Image Retrieval with CNN system that can retrieve at least 5 images in top 10.  
+So I decide to try to improve the system. But it is for another blog (maybe).  
 
-The workflow is kinda straight-forward tho, thanks to CNN.
+The workflow is kinda straight-forward tho, thanks to CNN.  
+This should help improving the system performance to be easy.  
 
-## Conlusion
+I heard that, a good practice when doing a Deep Learning project, or building Deep Learning system,  
+is, first, to build it end-to-end, in other words, to build a baseline.  
+Then iterate over it again and again, end-to-end, for incremental improvement.  
+So here it is, the baseline with hope.  
 
-I implement Image Retrieval with CNN.  
-CNN helps with producing the code in a very straight-forward way.  
-However, the system now needs improvement.  
+## What next?
 
-If I manage to improve the system successfully, there will be a blog "IR with CNN Phase 2".  
-On the other hand, please head out to my other blogs if you interested.  
+For system improvement attempts,  
+If I manage to improve the system successfully, there will (may)be a blog "IR with CNN Phase 2", or something like that.  
+On the other hand, if it is doomed, please visit my other blogs if you are interested.   
 
+<br/>
 
+---------- Thank you for reading ----------
