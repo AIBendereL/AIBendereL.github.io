@@ -166,7 +166,7 @@ So here it is, the baseline with hope.
 
 For system improvement attempts,  
 If I manage to improve the system successfully, there will (may)be a blog "IR with CNN Phase 2", or something like that.  
-On the other hand, if it is doomed, please visit my other blogs if you are interested.   
+Meanwhile, please visit my other blogs if you are interested.   
 
 <br/>
 
